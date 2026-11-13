@@ -6,24 +6,37 @@
 |---|---|---|
 | `.gitattributes` | Правила обработки файлов Git, в том числе окончания строк | |
 | `.editorconfig` | Единые настройки форматирования кода в редакторах | |
-| файл правил линтера (TODO: `phpcs.xml` / `eslint.config.js` / `ruff.toml` / …) | Правила проверки PHP-кода по PSR-12 | |
+| файл правил линтера `phpcs.xml` | Правила проверки PHP-кода по PSR-12 | |
 | `.vscode/settings.json`, `.vscode/extensions.json` | Настройки VS Code и рекомендуемые расширения | |
 | настройки второй Apache NetBeans (TODO какие файлы) | TODO | |
 | `CONTRIBUTING.md` | Инструкции для разработчиков по работе с проектом | |
 
 ## 2. Линтер
 
-Линтер: TODO (название, версия). Команда проверки: TODO
+Линтер: PHP_CodeSniffer version 4.0.4 (название, версия). Команда проверки: php phpcs.phar --report=summary и php phpcs.phar --report=source
 
 | Замер | Ошибок | Файлов с ошибками |
 |---|---|---|
-| До автоисправления | TODO | |
+| До автоисправления | 96 | 13 |
 | После автоисправления | TODO | |
 | Итог (после ручных исправлений / отключения правил) | TODO | |
 
-Отключённые правила и почему: TODO (если не отключали — «нет»)
+Отключённые правила и почему:
+Generic.Files.LineLength — в шаблонах смешиваются HTML и PHP, допустимы длинные строки.
+PSR1.Files.SideEffects — в шаблонах допустимы побочные эффекты.
+PSR1.Classes.ClassDeclaration.MissingNamespace — проект не использует пространства имён и автозагрузку.
+Squiz.ControlStructures.ControlSignature — используется альтернативный синтаксис PHP.
+Squiz.WhiteSpace.ScopeClosingBrace — используется альтернативный синтаксис PHP.
+PSR12.Files.FileHeader — для шаблонов не требуется стандартная проверка заголовков файлов
 
-Какие правила нарушались чаще всего: TODO
+Какие правила нарушались чаще всего:
+Generic.WhiteSpace.DisallowTabIndent.TabsUsed — 78 нарушений.
+PSR2.Files.EndFileNewline.NoneFound — 8 нарушений.
+Generic.ControlStructures.InlineControlStructure.NotAllowed — 3 нарушения.
+PSR12.Files.FileHeader.SpacingAfterTagBlock — 3 нарушения.
+PSR12.Files.FileHeader.SpacingAfterDocblockBlock — 2 нарушения.
+PSR12.Files.FileHeader.HeaderPosition — 1 нарушение.
+Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen — 1 нарушение.
 
 ## 3. Экспорт настроек IDE
 
