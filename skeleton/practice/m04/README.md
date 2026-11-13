@@ -22,21 +22,21 @@
 | Итог (после ручных исправлений / отключения правил) | TODO | |
 
 Отключённые правила и почему:
-Generic.Files.LineLength — в шаблонах смешиваются HTML и PHP, допустимы длинные строки.
-PSR1.Files.SideEffects — в шаблонах допустимы побочные эффекты.
-PSR1.Classes.ClassDeclaration.MissingNamespace — проект не использует пространства имён и автозагрузку.
-Squiz.ControlStructures.ControlSignature — используется альтернативный синтаксис PHP.
-Squiz.WhiteSpace.ScopeClosingBrace — используется альтернативный синтаксис PHP.
-PSR12.Files.FileHeader — для шаблонов не требуется стандартная проверка заголовков файлов
+- Generic.Files.LineLength — в шаблонах смешиваются HTML и PHP, допустимы длинные строки.
+- PSR1.Files.SideEffects — в шаблонах допустимы побочные эффекты.
+- PSR1.Classes.ClassDeclaration.MissingNamespace — проект не использует пространства имён и автозагрузку.
+- Squiz.ControlStructures.ControlSignature — используется альтернативный синтаксис PHP.
+- Squiz.WhiteSpace.ScopeClosingBrace — используется альтернативный синтаксис PHP.
+- PSR12.Files.FileHeader — для шаблонов не требуется стандартная проверка заголовков файлов
 
 Какие правила нарушались чаще всего:
-Generic.WhiteSpace.DisallowTabIndent.TabsUsed — 78 нарушений.
-PSR2.Files.EndFileNewline.NoneFound — 8 нарушений.
-Generic.ControlStructures.InlineControlStructure.NotAllowed — 3 нарушения.
-PSR12.Files.FileHeader.SpacingAfterTagBlock — 3 нарушения.
-PSR12.Files.FileHeader.SpacingAfterDocblockBlock — 2 нарушения.
-PSR12.Files.FileHeader.HeaderPosition — 1 нарушение.
-Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen — 1 нарушение.
+- Generic.WhiteSpace.DisallowTabIndent.TabsUsed — 78 нарушений.
+- PSR2.Files.EndFileNewline.NoneFound — 8 нарушений.
+- Generic.ControlStructures.InlineControlStructure.NotAllowed — 3 нарушения.
+- PSR12.Files.FileHeader.SpacingAfterTagBlock — 3 нарушения.
+- PSR12.Files.FileHeader.SpacingAfterDocblockBlock — 2 нарушения.
+- PSR12.Files.FileHeader.HeaderPosition — 1 нарушение.
+- Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen — 1 нарушение.
 
 ## 3. Экспорт настроек IDE
 
