@@ -9,7 +9,7 @@
 | файл правил линтера `phpcs.xml` | Правила проверки PHP-кода по PSR-12 | 1bc4280 |
 | `.vscode/settings.json`, `.vscode/extensions.json` | Настройки VS Code и рекомендуемые расширения |5312988 |
 | настройки второй IDE (NetBeans) | Настройки форматирования кода на уровне проекта: отступы 4 пробела и преобразование табуляции в пробелы (Expand Tabs to Spaces) | 5312988 |
-| `CONTRIBUTING.md` | Инструкции для разработчиков по работе с проектом | |
+| `CONTRIBUTING.md` | Инструкции для разработчиков по работе с проектом | 66a0b2f |
 
 ## 2. Линтер
 
@@ -42,8 +42,8 @@
 
 | Среда | Как экспортировали | Файл в `practice/m04/` |
 |---|---|---|
-| VS Code | TODO | |
-| TODO вторая IDE | TODO | |
+| VS Code | Через команду Preferences: Open User Settings (JSON) скопировали настройки редактора в файл проекта .vscode/settings.json. Рекомендуемые расширения добавили в .vscode/extensions.json. | .vscode/settings.json, .vscode/extensions.json |
+| NetBeans вторая IDE | Настройки форматирования кода задали на уровне проекта: отступ 4 пробела, включили Expand Tabs to Spaces | Файл настроек форматирования проекта NetBeans |
 
 ## 4. Проверка в чистом окружении
 
